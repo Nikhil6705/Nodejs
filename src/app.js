@@ -8,7 +8,7 @@ const PORT = 3000; // You can change the port if needed
 
 // Establishing a connection with the database
 const connection = mysql.createConnection({
-  host: '0.0.0.0',
+  host: 'localhost',
   user: 'root',
   password: 'password',
   database: 'sadhixdb'
@@ -50,5 +50,5 @@ app.get("/user/:id", (req, res) => {
 });
 
 app.listen(PORT, () => {
-    console.log(`Server is running at http://0.0.0.0:${PORT}`);
+    console.log(`Server is running at http://localhost:${PORT}`);
 });
